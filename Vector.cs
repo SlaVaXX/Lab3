@@ -80,7 +80,7 @@ namespace Lab_3
         }
         private double SetLength(double angle, Vector2 coordinates)
         {
-            return Math.Round(coordinates.X / Math.Cos(angle), 2);
+            return Math.Round(Math.Sqrt(coordinates.X * coordinates.X + coordinates.Y * coordinates.Y), 2);
         }
         public Vector2 getCoordinates
         {
